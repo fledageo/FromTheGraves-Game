@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="canvas_wrapper">
+        <div class="playWrapper">
+            <button class="playBtn">Play</button>
+        </div>
+        <div class="weaponsBlock">
+            <div class="weaponWrapper">
+                <img src="/Images/objects/objects/ak47.png" id="ak47">
+                <button id="buyBtn"></button>
+            </div>
+        </div>
+        <canvas id="canvas" width="1000" height="600"></canvas>
+            <div class="gameOver">
+                <div class="innerWrapper">
+                    <div class="titleWrapper">
+                        <h1>Game Over</h1>
+                    </div>
+                    <div class="btnWrapper">
+                        <button class="restartBtn">RESTART</button>
+                    </div>
+                </div>
+            </div>
+            <audio src="/sounds/backSound.mp3" class="backSound"></audio>
+            <audio src="/sounds/zombie.mp3" class="zombieSound"></audio>
+            <audio src="/sounds/gunShoot.mp3" class="gunShoot"></audio>
+
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.canvas_wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #36453B;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+} 
+
+.playWrapper{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Images/playBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.playBtn{
+    height: 55px;
+    width: 130px;
+    font-size: 25px;
+    background-color: #36453B;
+    color: rgb(233, 98, 98);
+    border: none;
+    border-radius: 5px;
+}
+.playBtn:hover {
+    background-color: #576857;
+    border: 2px solid rgb(187, 42, 42);
+}
+.playBtn:active {
+    background-color: #515751;
+}
+
+#canvas {
+    background-color: #ffffff;
+    cursor: url("../Images/objects/objects/aim.png"),auto;
+    display: none;
+}
+
+.gameOver {
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameOver h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.innerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.innerWrapper .btnWrapper button {
+    padding: 10px 20px;
+    border: 0;
+    background-color: #4A4B2F;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.weaponsBlock{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 90px;
+    background-color: rgba(69, 70, 42, 0.6);
+    width: 500px;
+    height: 200px;
+}
+.weaponWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buyBtn{
+    margin-top: 20px;
+    width: 130px;
+    height: 30px;
+    background: #8AAA79;
+    border: none;
+    font-size: 20px;
+}
+#buyBtn:hover{
+    background: #789767;
+}
+#buyBtn:active{
+    background: #5e7054;
+}
